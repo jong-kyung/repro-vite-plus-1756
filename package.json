@@ -1,0 +1,25 @@
+{
+  "name": "repro-vite-plus-1756",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "tools/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vp run web#dev",
+    "build": "vp run -r build",
+    "check": "vp run -r check",
+    "preview": "vp run web#preview",
+    "clean": "rm -rf .svelte-kit apps/web/.svelte-kit"
+  },
+  "dependencies": {
+    "vite-plus": "0.1.23"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.33.2"
+}

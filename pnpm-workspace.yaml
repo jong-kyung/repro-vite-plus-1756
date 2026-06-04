@@ -1,0 +1,25 @@
+packages:
+  - apps/*
+  - packages/*
+  - tools/*
+
+catalog:
+  "@sveltejs/vite-plugin-svelte": 7.1.2
+  "@types/node": ^24.13.0
+  svelte-check: 4.6.0
+  typescript: ^5
+  vite: npm:@voidzero-dev/vite-plus-core@latest
+  vitest: npm:@voidzero-dev/vite-plus-test@latest
+  vite-plus: latest
+overrides:
+  vite: "catalog:"
+  vitest: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: "*"
+    vitest: "*"
+
+catalogMode: prefer
