@@ -15,7 +15,7 @@
     "clean": "rm -rf .svelte-kit apps/web/.svelte-kit"
   },
   "dependencies": {
-    "vite-plus": "0.1.23"
+    "vite-plus": "0.1.24"
   },
   "devDependencies": {},
   "engines": {
